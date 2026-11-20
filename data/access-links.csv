@@ -1,0 +1,4 @@
+proposal_id,service_id,group_code,minutes_before,minutes_after
+S-1,clinic,older,24,12
+S-1,market,renter,18,10
+S-3,daycare,caregiver,31,19

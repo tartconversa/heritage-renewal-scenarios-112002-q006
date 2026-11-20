@@ -1,0 +1,4 @@
+building_id,block,protection_level,permitted_work,condition
+B-1,Old-A,high,facade;access,poor
+B-2,Old-A,medium,repair;access,fair
+B-3,Old-B,high,repair,poor
