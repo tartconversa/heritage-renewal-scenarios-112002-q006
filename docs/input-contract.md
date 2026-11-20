@@ -1,8 +1,8 @@
-# Input material
+# 合成输入材料
 
-All records are synthetic and refer to no real household, project, or city. A file is a source extract, not a precomputed answer. Preserve source identifiers and revisions when interpreting it.
+这里的记录均为合成数据，不对应真实住户、项目或城市。每个文件表示一个来源数据表，不包含分析结论；解释记录时应保留来源标识和修订关系。
 
-- `buildings.csv`: CSV; columns `building_id, block, protection_level, permitted_work, condition`. Dates use ISO 8601 where present; blank cells mean unknown or not supplied, not numeric zero.
-- `proposals.csv`: CSV; columns `proposal_id, building_id, work, estimate_low, estimate_high, operator_id`. Dates use ISO 8601 where present; blank cells mean unknown or not supplied, not numeric zero.
-- `access-links.csv`: CSV; columns `proposal_id, service_id, group_code, minutes_before, minutes_after`. Dates use ISO 8601 where present; blank cells mean unknown or not supplied, not numeric zero.
-- `operations.csv`: CSV; columns `operator_id, service_id, capacity_per_day, confirmed_start`. Dates use ISO 8601 where present; blank cells mean unknown or not supplied, not numeric zero.
+- `buildings.csv`：CSV 表格，字段为 `building_id, block, protection_level, permitted_work, condition`。日期字段使用 ISO 8601 格式；空单元格表示未知或未提供，不代表数值零。
+- `proposals.csv`：CSV 表格，字段为 `proposal_id, building_id, work, estimate_low, estimate_high, operator_id`。日期字段使用 ISO 8601 格式；空单元格表示未知或未提供，不代表数值零。
+- `access-links.csv`：CSV 表格，字段为 `proposal_id, service_id, group_code, minutes_before, minutes_after`。日期字段使用 ISO 8601 格式；空单元格表示未知或未提供，不代表数值零。
+- `operations.csv`：CSV 表格，字段为 `operator_id, service_id, capacity_per_day, confirmed_start`。日期字段使用 ISO 8601 格式；空单元格表示未知或未提供，不代表数值零。
