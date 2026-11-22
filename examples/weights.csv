@@ -1,0 +1,4 @@
+group_code,weight,source,representativeness
+older,0.45,2026年街区居民议事会第一轮问卷,仅覆盖Old-A片区常住户，租户与照护者样本不足
+renter,0.25,2026年街区居民议事会第一轮问卷,样本量12份，未覆盖新迁入租户
+caregiver,0.30,2026年街区居民议事会第一轮问卷,经社区居委会提名，非随机抽样

@@ -1,0 +1,964 @@
+{
+  "generated_at": "2026-11-22T18:20:52+00:00",
+  "snapshot": {
+    "run_id": "run-353d50051e31",
+    "created_at": "2026-11-22T18:20:52+00:00",
+    "files": [
+      {
+        "path": "buildings.csv",
+        "sha256": "3d5809c0902ece1049a118efe85e0d5932690e76cfedeef4c327b4fe1041cdc6",
+        "size_bytes": 157
+      },
+      {
+        "path": "proposals.csv",
+        "sha256": "8f73e6531ed2136b510f3ee66da9580fd39a028e2338906a25126659169ac3a2",
+        "size_bytes": 166
+      },
+      {
+        "path": "access-links.csv",
+        "sha256": "9cba288b667df69042fe0cb3e731f9add49d012f0f5033107039ee1126fa2cc2",
+        "size_bytes": 138
+      },
+      {
+        "path": "operations.csv",
+        "sha256": "455b2f4be6e0e8d2d62516840bf9981798bb58c5af5982e83fb0bd9c34e66df4",
+        "size_bytes": 106
+      }
+    ],
+    "combined_sha256": "353d50051e31347bb82bfe5284b773b1711056d25df0c83efcc4c52943463915"
+  },
+  "dataset": {
+    "buildings": [
+      {
+        "building_id": "B-1",
+        "block": "Old-A",
+        "protection_level": "high",
+        "permitted_work": [
+          "facade",
+          "access"
+        ],
+        "condition": "poor"
+      },
+      {
+        "building_id": "B-2",
+        "block": "Old-A",
+        "protection_level": "medium",
+        "permitted_work": [
+          "repair",
+          "access"
+        ],
+        "condition": "fair"
+      },
+      {
+        "building_id": "B-3",
+        "block": "Old-B",
+        "protection_level": "high",
+        "permitted_work": [
+          "repair"
+        ],
+        "condition": "poor"
+      }
+    ],
+    "proposals": [
+      {
+        "proposal_id": "S-1",
+        "building_id": "B-1",
+        "work": "access",
+        "estimate_low": 180000,
+        "estimate_high": 260000,
+        "operator_id": "OP-1"
+      },
+      {
+        "proposal_id": "S-2",
+        "building_id": "B-2",
+        "work": "repair",
+        "estimate_low": 220000,
+        "estimate_high": 280000,
+        "operator_id": null
+      },
+      {
+        "proposal_id": "S-3",
+        "building_id": "B-3",
+        "work": "repair",
+        "estimate_low": 310000,
+        "estimate_high": 390000,
+        "operator_id": "OP-2"
+      }
+    ],
+    "links": [
+      {
+        "proposal_id": "S-1",
+        "service_id": "clinic",
+        "group_code": "older",
+        "minutes_before": 24,
+        "minutes_after": 12
+      },
+      {
+        "proposal_id": "S-1",
+        "service_id": "market",
+        "group_code": "renter",
+        "minutes_before": 18,
+        "minutes_after": 10
+      },
+      {
+        "proposal_id": "S-3",
+        "service_id": "daycare",
+        "group_code": "caregiver",
+        "minutes_before": 31,
+        "minutes_after": 19
+      }
+    ],
+    "operations": [
+      {
+        "operator_id": "OP-1",
+        "service_id": "community_room",
+        "capacity_per_day": 35,
+        "confirmed_start": "2027-04-01"
+      },
+      {
+        "operator_id": "OP-2",
+        "service_id": "clinic",
+        "capacity_per_day": 18,
+        "confirmed_start": null
+      }
+    ],
+    "issues": [],
+    "buildings_by_id": {
+      "B-1": {
+        "building_id": "B-1",
+        "block": "Old-A",
+        "protection_level": "high",
+        "permitted_work": [
+          "facade",
+          "access"
+        ],
+        "condition": "poor"
+      },
+      "B-2": {
+        "building_id": "B-2",
+        "block": "Old-A",
+        "protection_level": "medium",
+        "permitted_work": [
+          "repair",
+          "access"
+        ],
+        "condition": "fair"
+      },
+      "B-3": {
+        "building_id": "B-3",
+        "block": "Old-B",
+        "protection_level": "high",
+        "permitted_work": [
+          "repair"
+        ],
+        "condition": "poor"
+      }
+    },
+    "proposals_by_id": {
+      "S-1": {
+        "proposal_id": "S-1",
+        "building_id": "B-1",
+        "work": "access",
+        "estimate_low": 180000,
+        "estimate_high": 260000,
+        "operator_id": "OP-1"
+      },
+      "S-2": {
+        "proposal_id": "S-2",
+        "building_id": "B-2",
+        "work": "repair",
+        "estimate_low": 220000,
+        "estimate_high": 280000,
+        "operator_id": null
+      },
+      "S-3": {
+        "proposal_id": "S-3",
+        "building_id": "B-3",
+        "work": "repair",
+        "estimate_low": 310000,
+        "estimate_high": 390000,
+        "operator_id": "OP-2"
+      }
+    },
+    "links_by_proposal": {
+      "S-1": [
+        {
+          "proposal_id": "S-1",
+          "service_id": "clinic",
+          "group_code": "older",
+          "minutes_before": 24,
+          "minutes_after": 12
+        },
+        {
+          "proposal_id": "S-1",
+          "service_id": "market",
+          "group_code": "renter",
+          "minutes_before": 18,
+          "minutes_after": 10
+        }
+      ],
+      "S-3": [
+        {
+          "proposal_id": "S-3",
+          "service_id": "daycare",
+          "group_code": "caregiver",
+          "minutes_before": 31,
+          "minutes_after": 19
+        }
+      ]
+    },
+    "operations_by_operator": {
+      "OP-1": [
+        {
+          "operator_id": "OP-1",
+          "service_id": "community_room",
+          "capacity_per_day": 35,
+          "confirmed_start": "2027-04-01"
+        }
+      ],
+      "OP-2": [
+        {
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null
+        }
+      ]
+    }
+  },
+  "proposal_assessments": [
+    {
+      "proposal": {
+        "proposal_id": "S-1",
+        "building_id": "B-1",
+        "work": "access",
+        "estimate_low": 180000,
+        "estimate_high": 260000,
+        "operator_id": "OP-1"
+      },
+      "building": {
+        "building_id": "B-1",
+        "block": "Old-A",
+        "protection_level": "high",
+        "permitted_work": [
+          "facade",
+          "access"
+        ],
+        "condition": "poor"
+      },
+      "feasibility": {
+        "verdict": "feasible",
+        "reasons": [
+          "工程 'access' 位于建筑 B-1（保护等级 high）许可范围 ['facade', 'access'] 内"
+        ]
+      },
+      "access": [
+        {
+          "service_id": "clinic",
+          "group_code": "older",
+          "minutes_before": 24,
+          "minutes_after": 12,
+          "saving": 12,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        },
+        {
+          "service_id": "market",
+          "group_code": "renter",
+          "minutes_before": 18,
+          "minutes_after": 10,
+          "saving": 8,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "stable",
+          "operator_id": "OP-1",
+          "service_id": "community_room",
+          "capacity_per_day": 35,
+          "confirmed_start": "2027-04-01",
+          "note": "运营方 OP-1 承诺 community_room 稳定容量 35 人/日，启用日期 2027-04-01"
+        }
+      ],
+      "affected_groups": [
+        "older",
+        "renter"
+      ],
+      "notes": [
+        "工程 'access' 位于建筑 B-1（保护等级 high）许可范围 ['facade', 'access'] 内",
+        "运营方 OP-1 承诺 community_room 稳定容量 35 人/日，启用日期 2027-04-01"
+      ],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    },
+    {
+      "proposal": {
+        "proposal_id": "S-2",
+        "building_id": "B-2",
+        "work": "repair",
+        "estimate_low": 220000,
+        "estimate_high": 280000,
+        "operator_id": null
+      },
+      "building": {
+        "building_id": "B-2",
+        "block": "Old-A",
+        "protection_level": "medium",
+        "permitted_work": [
+          "repair",
+          "access"
+        ],
+        "condition": "fair"
+      },
+      "feasibility": {
+        "verdict": "feasible",
+        "reasons": [
+          "工程 'repair' 位于建筑 B-2（保护等级 medium）许可范围 ['repair', 'access'] 内"
+        ]
+      },
+      "access": [],
+      "capacity_lines": [
+        {
+          "state": "no_operator",
+          "operator_id": null,
+          "service_id": null,
+          "capacity_per_day": null,
+          "confirmed_start": null,
+          "note": "方案 S-2 未指定运营责任方，即使设施建成也不得按稳定服务容量计入收益"
+        }
+      ],
+      "affected_groups": [],
+      "notes": [
+        "工程 'repair' 位于建筑 B-2（保护等级 medium）许可范围 ['repair', 'access'] 内",
+        "方案 S-2 未指定运营责任方，即使设施建成也不得按稳定服务容量计入收益"
+      ],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    },
+    {
+      "proposal": {
+        "proposal_id": "S-3",
+        "building_id": "B-3",
+        "work": "repair",
+        "estimate_low": 310000,
+        "estimate_high": 390000,
+        "operator_id": "OP-2"
+      },
+      "building": {
+        "building_id": "B-3",
+        "block": "Old-B",
+        "protection_level": "high",
+        "permitted_work": [
+          "repair"
+        ],
+        "condition": "poor"
+      },
+      "feasibility": {
+        "verdict": "feasible",
+        "reasons": [
+          "工程 'repair' 位于建筑 B-3（保护等级 high）许可范围 ['repair'] 内"
+        ]
+      },
+      "access": [
+        {
+          "service_id": "daycare",
+          "group_code": "caregiver",
+          "minutes_before": 31,
+          "minutes_after": 19,
+          "saving": 12,
+          "sources": [
+            "S-3"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "unconfirmed",
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null,
+          "note": "运营方 OP-2 的 clinic 缺少确认启用日期，容量 18 人/日只能列为未确认容量"
+        }
+      ],
+      "affected_groups": [
+        "caregiver"
+      ],
+      "notes": [
+        "工程 'repair' 位于建筑 B-3（保护等级 high）许可范围 ['repair'] 内",
+        "运营方 OP-2 的 clinic 缺少确认启用日期，容量 18 人/日只能列为未确认容量"
+      ],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    }
+  ],
+  "combinations": [
+    {
+      "member_ids": [
+        "S-1",
+        "S-2"
+      ],
+      "feasible": true,
+      "infeasible_reasons": [
+        "全部成员满足保护底线"
+      ],
+      "cost_low": 400000,
+      "cost_high": 540000,
+      "cost_complete": true,
+      "access": [
+        {
+          "service_id": "clinic",
+          "group_code": "older",
+          "minutes_before": 24,
+          "minutes_after": 12,
+          "saving": 12,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        },
+        {
+          "service_id": "market",
+          "group_code": "renter",
+          "minutes_before": 18,
+          "minutes_after": 10,
+          "saving": 8,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "no_operator",
+          "operator_id": null,
+          "service_id": null,
+          "capacity_per_day": null,
+          "confirmed_start": null,
+          "note": "方案 S-2 未指定运营责任方，即使设施建成也不得按稳定服务容量计入收益"
+        },
+        {
+          "state": "stable",
+          "operator_id": "OP-1",
+          "service_id": "community_room",
+          "capacity_per_day": 35,
+          "confirmed_start": "2027-04-01",
+          "note": "运营方 OP-1 承诺 community_room 稳定容量 35 人/日，启用日期 2027-04-01"
+        }
+      ],
+      "groups_covered": [
+        "older",
+        "renter"
+      ],
+      "shared_links": [],
+      "notes": [],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    },
+    {
+      "member_ids": [
+        "S-1",
+        "S-3"
+      ],
+      "feasible": true,
+      "infeasible_reasons": [
+        "全部成员满足保护底线"
+      ],
+      "cost_low": 490000,
+      "cost_high": 650000,
+      "cost_complete": true,
+      "access": [
+        {
+          "service_id": "clinic",
+          "group_code": "older",
+          "minutes_before": 24,
+          "minutes_after": 12,
+          "saving": 12,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        },
+        {
+          "service_id": "daycare",
+          "group_code": "caregiver",
+          "minutes_before": 31,
+          "minutes_after": 19,
+          "saving": 12,
+          "sources": [
+            "S-3"
+          ],
+          "note": ""
+        },
+        {
+          "service_id": "market",
+          "group_code": "renter",
+          "minutes_before": 18,
+          "minutes_after": 10,
+          "saving": 8,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "stable",
+          "operator_id": "OP-1",
+          "service_id": "community_room",
+          "capacity_per_day": 35,
+          "confirmed_start": "2027-04-01",
+          "note": "运营方 OP-1 承诺 community_room 稳定容量 35 人/日，启用日期 2027-04-01"
+        },
+        {
+          "state": "unconfirmed",
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null,
+          "note": "运营方 OP-2 的 clinic 缺少确认启用日期，容量 18 人/日只能列为未确认容量"
+        }
+      ],
+      "groups_covered": [
+        "caregiver",
+        "older",
+        "renter"
+      ],
+      "shared_links": [],
+      "notes": [],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    },
+    {
+      "member_ids": [
+        "S-2",
+        "S-3"
+      ],
+      "feasible": true,
+      "infeasible_reasons": [
+        "全部成员满足保护底线"
+      ],
+      "cost_low": 530000,
+      "cost_high": 670000,
+      "cost_complete": true,
+      "access": [
+        {
+          "service_id": "daycare",
+          "group_code": "caregiver",
+          "minutes_before": 31,
+          "minutes_after": 19,
+          "saving": 12,
+          "sources": [
+            "S-3"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "no_operator",
+          "operator_id": null,
+          "service_id": null,
+          "capacity_per_day": null,
+          "confirmed_start": null,
+          "note": "方案 S-2 未指定运营责任方，即使设施建成也不得按稳定服务容量计入收益"
+        },
+        {
+          "state": "unconfirmed",
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null,
+          "note": "运营方 OP-2 的 clinic 缺少确认启用日期，容量 18 人/日只能列为未确认容量"
+        }
+      ],
+      "groups_covered": [
+        "caregiver"
+      ],
+      "shared_links": [],
+      "notes": [],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    },
+    {
+      "member_ids": [
+        "S-1",
+        "S-2",
+        "S-3"
+      ],
+      "feasible": true,
+      "infeasible_reasons": [
+        "全部成员满足保护底线"
+      ],
+      "cost_low": 710000,
+      "cost_high": 930000,
+      "cost_complete": true,
+      "access": [
+        {
+          "service_id": "clinic",
+          "group_code": "older",
+          "minutes_before": 24,
+          "minutes_after": 12,
+          "saving": 12,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        },
+        {
+          "service_id": "daycare",
+          "group_code": "caregiver",
+          "minutes_before": 31,
+          "minutes_after": 19,
+          "saving": 12,
+          "sources": [
+            "S-3"
+          ],
+          "note": ""
+        },
+        {
+          "service_id": "market",
+          "group_code": "renter",
+          "minutes_before": 18,
+          "minutes_after": 10,
+          "saving": 8,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "no_operator",
+          "operator_id": null,
+          "service_id": null,
+          "capacity_per_day": null,
+          "confirmed_start": null,
+          "note": "方案 S-2 未指定运营责任方，即使设施建成也不得按稳定服务容量计入收益"
+        },
+        {
+          "state": "stable",
+          "operator_id": "OP-1",
+          "service_id": "community_room",
+          "capacity_per_day": 35,
+          "confirmed_start": "2027-04-01",
+          "note": "运营方 OP-1 承诺 community_room 稳定容量 35 人/日，启用日期 2027-04-01"
+        },
+        {
+          "state": "unconfirmed",
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null,
+          "note": "运营方 OP-2 的 clinic 缺少确认启用日期，容量 18 人/日只能列为未确认容量"
+        }
+      ],
+      "groups_covered": [
+        "caregiver",
+        "older",
+        "renter"
+      ],
+      "shared_links": [],
+      "notes": [],
+      "score": {
+        "available": false,
+        "aggregate": null,
+        "weights": {},
+        "covered_groups": [],
+        "missing_groups": [
+          "caregiver",
+          "older",
+          "renter"
+        ],
+        "note": "未提供群体权重文件：仅呈现分群体视角，不生成加权总分，不得将任何单一排序解读为客观共识"
+      }
+    }
+  ],
+  "groups": [
+    "caregiver",
+    "older",
+    "renter"
+  ],
+  "group_matrix": {
+    "S-1": {
+      "caregiver": 0,
+      "older": 12,
+      "renter": 8
+    },
+    "S-2": {
+      "caregiver": 0,
+      "older": 0,
+      "renter": 0
+    },
+    "S-3": {
+      "caregiver": 12,
+      "older": 0,
+      "renter": 0
+    }
+  },
+  "service_coverage": [
+    {
+      "service_id": "clinic",
+      "access_entries": [
+        {
+          "service_id": "clinic",
+          "group_code": "older",
+          "minutes_before": 24,
+          "minutes_after": 12,
+          "saving": 12,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [
+        {
+          "state": "unconfirmed",
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null,
+          "note": "启用日期或容量缺失，未确认"
+        }
+      ],
+      "mismatch_notes": []
+    },
+    {
+      "service_id": "community_room",
+      "access_entries": [],
+      "capacity_lines": [
+        {
+          "state": "stable",
+          "operator_id": "OP-1",
+          "service_id": "community_room",
+          "capacity_per_day": 35,
+          "confirmed_start": "2027-04-01",
+          "note": "已确认稳定容量"
+        }
+      ],
+      "mismatch_notes": [
+        "服务 community_room 有运营容量承诺，但没有任何方案改善其可达性"
+      ]
+    },
+    {
+      "service_id": "daycare",
+      "access_entries": [
+        {
+          "service_id": "daycare",
+          "group_code": "caregiver",
+          "minutes_before": 31,
+          "minutes_after": 19,
+          "saving": 12,
+          "sources": [
+            "S-3"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [],
+      "mismatch_notes": [
+        "服务 daycare 有街巷可达改善，但运营表中没有任何容量承诺，改善后可能无稳定服务可及"
+      ]
+    },
+    {
+      "service_id": "market",
+      "access_entries": [
+        {
+          "service_id": "market",
+          "group_code": "renter",
+          "minutes_before": 18,
+          "minutes_after": 10,
+          "saving": 8,
+          "sources": [
+            "S-1"
+          ],
+          "note": ""
+        }
+      ],
+      "capacity_lines": [],
+      "mismatch_notes": [
+        "服务 market 有街巷可达改善，但运营表中没有任何容量承诺，改善后可能无稳定服务可及"
+      ]
+    }
+  ],
+  "demand_traces": [
+    {
+      "group_code": "caregiver",
+      "service_id": "daycare",
+      "proposal_ids": [
+        "S-3"
+      ],
+      "baseline_minutes": 31,
+      "best_after_minutes": 19,
+      "best_proposal_id": "S-3",
+      "saving": 12,
+      "capacity_lines": [],
+      "cost_ranges": [
+        [
+          "S-3",
+          310000,
+          390000
+        ]
+      ],
+      "protection_boundaries": [
+        [
+          "B-3",
+          "high",
+          [
+            "repair"
+          ]
+        ]
+      ],
+      "notes": [
+        "服务 daycare 没有可计入的稳定运营容量，可达改善无法等同于可持续服务收益"
+      ]
+    },
+    {
+      "group_code": "older",
+      "service_id": "clinic",
+      "proposal_ids": [
+        "S-1"
+      ],
+      "baseline_minutes": 24,
+      "best_after_minutes": 12,
+      "best_proposal_id": "S-1",
+      "saving": 12,
+      "capacity_lines": [
+        {
+          "state": "unconfirmed",
+          "operator_id": "OP-2",
+          "service_id": "clinic",
+          "capacity_per_day": 18,
+          "confirmed_start": null,
+          "note": "运营表中存在该服务的承诺，但与本方案指定运营方不一致"
+        }
+      ],
+      "cost_ranges": [
+        [
+          "S-1",
+          180000,
+          260000
+        ]
+      ],
+      "protection_boundaries": [
+        [
+          "B-1",
+          "high",
+          [
+            "facade",
+            "access"
+          ]
+        ]
+      ],
+      "notes": [
+        "服务 clinic 没有可计入的稳定运营容量，可达改善无法等同于可持续服务收益"
+      ]
+    },
+    {
+      "group_code": "renter",
+      "service_id": "market",
+      "proposal_ids": [
+        "S-1"
+      ],
+      "baseline_minutes": 18,
+      "best_after_minutes": 10,
+      "best_proposal_id": "S-1",
+      "saving": 8,
+      "capacity_lines": [],
+      "cost_ranges": [
+        [
+          "S-1",
+          180000,
+          260000
+        ]
+      ],
+      "protection_boundaries": [
+        [
+          "B-1",
+          "high",
+          [
+            "facade",
+            "access"
+          ]
+        ]
+      ],
+      "notes": [
+        "服务 market 没有可计入的稳定运营容量，可达改善无法等同于可持续服务收益"
+      ]
+    }
+  ],
+  "weighted_score": null,
+  "max_members": 3,
+  "combo_truncated": false
+}

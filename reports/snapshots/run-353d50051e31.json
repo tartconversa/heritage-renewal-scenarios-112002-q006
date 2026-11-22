@@ -1,0 +1,23 @@
+{
+  "run_id": "run-353d50051e31",
+  "created_at": "2026-11-22T18:20:52+00:00",
+  "combined_sha256": "353d50051e31347bb82bfe5284b773b1711056d25df0c83efcc4c52943463915",
+  "files": [
+    {
+      "path": "buildings.csv",
+      "sha256": "3d5809c0902ece1049a118efe85e0d5932690e76cfedeef4c327b4fe1041cdc6"
+    },
+    {
+      "path": "proposals.csv",
+      "sha256": "8f73e6531ed2136b510f3ee66da9580fd39a028e2338906a25126659169ac3a2"
+    },
+    {
+      "path": "access-links.csv",
+      "sha256": "9cba288b667df69042fe0cb3e731f9add49d012f0f5033107039ee1126fa2cc2"
+    },
+    {
+      "path": "operations.csv",
+      "sha256": "455b2f4be6e0e8d2d62516840bf9981798bb58c5af5982e83fb0bd9c34e66df4"
+    }
+  ]
+}
